@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shopping Documentation</title>
+		
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			.container{
+				max-width:900px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3 align="center"><em><small>"Shopping" Documentation by "minimalthemes"</small></em></h3>
+			<hr/>
+			<h2 align="center">"Shopping - HTML Template"</h2>
+			<hr/>
+			<div class="row clearfix">
+				<div class="col-md-3">
+					<p align="justify">
+						Created : <br/>
+						By : <a href="http://themeforest.net/user/minimalthemes">Minimalthemes</a><br/>
+						Email : <a href="mailto:support@puriwp.com">Email Me</a><br/>
+					</p>
+				</div>
+				<div class="col-md-9">
+					<p align="justify">
+						Thank you for purchasing this item, supporting our work. Please do not forget to rate our product.
+We would be happy to see your comments and stars.
+					</p>
+				</div>
+			</div>
+			<hr/>
+			<h4 id="tbl-content"><em>Table Of Contents</em></h4>
+			<ol type="A" start="A">
+				<li><a href="#html-structure">HTML Structure</a></li>
+				<li><a href="#css-structure">CSS Structure</a></li>
+				<li><a href="#java">Javascript</a></li>
+				<li><a href="#uploading">Uploading Templates</a></li>
+				<li><a href="#credit">Credits</a></li>
+			</ol>
+			<hr/>
+			<h3 id="html-structure">A. HTML Structure</h3>
+			<p>
+				Shopping is XHTML Strict template. It's made with Twitter Bootstrap CSS framework. Almost every layout styling is covered by Bootstrap unless some layout that generally Bootstrap can't do. This theme is a fluid layout with two columns. The general template structure is the same throughout the template. Here is the general structure. 
+			</p>
+			<h4>Header</h4>
+			<p>
+				Header contains Top section where is containing Logo, register and login  button, you can easily change the link and name according to your needs.
+				<pre>
+<code>
+&lt;div class="header"&gt;&lt;!--Header --&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-xs-6 col-md-4 main-logo"&gt;
+				&lt;a href="index.html"&gt;
+					&lt;img src="images/logo.png" alt="logo" class="logo img-responsive" /&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="col-md-8"&gt;
+				&lt;div class="pushright"&gt;
+					&lt;div class="top"&gt;
+						&lt;a href="#" id="reg" class="btn btn-default btn-dark"&gt;
+							Login&lt;span&gt;-- Or --&lt;/span&gt;Register
+						&lt;/a&gt;
+						&lt;div class="regwrap"&gt;
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-6 regform"&gt;
+									&lt;div id="title-widget-bg"&gt;
+										&lt;div class="title-widget"&gt;Login&lt;/div&gt;
+									&lt;/div&gt;
+									&lt;form role="form"&gt;
+										&lt;div class="form-group"&gt;
+											&lt;input type="text" class="form-control" id="username" placeholder="Username"&gt;
+										&lt;/div&gt;
+										&lt;div class="form-group"&gt;
+											&lt;input type="password" class="form-control" id="password" placeholder="password"&gt;
+										&lt;/div&gt;
+										&lt;div class="form-group"&gt;
+											&lt;button class="btn btn-default btn-red btn-sm"&gt;Sign In&lt;/button&gt;
+										&lt;/div&gt;
+									&lt;/form&gt;
+								&lt;/div&gt;
+								&lt;div class="col-md-6"&gt;
+									&lt;div id="title-widget-bg"&gt;
+										&lt;div class="title-widget"&gt;Register&lt;/div&gt;
+									&lt;/div&gt;
+									&lt;p&gt;
+										New User? By creating an account you be able to shop faster, be up to date on an order's status...
+									&lt;/p&gt;
+									&lt;button class="btn btn-default btn-yellow"&gt;Register Now&lt;/button&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="srch-wrap"&gt;
+							&lt;a href="#" id="srch" class="btn btn-default btn-search"&gt;
+								&lt;i class="fa fa-search"&gt;&lt;/i&gt;
+							&lt;/a&gt;
+						&lt;/div&gt;
+						&lt;div class="srchwrap"&gt;
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-12"&gt;
+									&lt;form class="form-horizontal" role="form"&gt;
+										&lt;div class="form-group"&gt;
+											&lt;label for="search" class="col-sm-2 control-label"&gt;Search&lt;/label&gt;
+											&lt;div class="col-sm-10"&gt;
+												&lt;input type="text" class="form-control" id="search"&gt;	
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/form&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="dashed"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!--Header --&gt;
+</code>
+				</pre>
+				
+				and then the site logo. Editing the logo you can easily change the home link and the logo image just find this code below.
+				<pre>
+					<code>
+&lt;div class="col-xs-6 col-md-4 main-logo"&gt;
+	&lt;a href="index.html"&gt;
+		&lt;img src="images/logo.png" alt="logo" class="logo img-responsive" /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+				
+			</p>
+			
+			<h4>Navigation</h4>
+			<p>
+				Site navigation is found in preview code below. To create or modify main menu items, just find this code on template package and change menu link and menu name according to your needs .
+			</p>
+			<div class="highlight">
+				<pre>
+					<code>
+&lt;div class="main-nav"&gt;&lt;!--main-nav --&gt;
+	&lt;div class="navbar navbar-default navbar-static-top"&gt;
+	&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+	&lt;div class="col-md-10"&gt;
+	&lt;div class="navbar-header"&gt;
+	&lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"&gt;
+	&lt;span class="icon-bar"&gt;&lt;/span&gt;
+	&lt;span class="icon-bar"&gt;&lt;/span&gt;
+	&lt;span class="icon-bar"&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class="navbar-collapse collapse"&gt;
+	&lt;ul class="nav navbar-nav"&gt;
+	&lt;li&gt;&lt;a href="index.html" class="active"&gt;Home&lt;/a&gt;&lt;div class="curve"&gt;&lt;/div&gt;&lt;/li&gt;
+	&lt;li class="dropdown menu-large"&gt;
+	&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Mega Menu&lt;/a&gt;
+	&lt;ul class="dropdown-menu megamenu container row"&gt;
+	&lt;li class="col-sm-4"&gt;
+	&lt;h4&gt;Page Template&lt;/h4&gt;
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class="col-sm-4"&gt;
+	&lt;h4&gt;Page Template&lt;/h4&gt;
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class="col-sm-4"&gt;
+	&lt;h4&gt;Page Template&lt;/h4&gt;
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li class="dropdown"&gt;
+	&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+	&lt;ul class="dropdown-menu"&gt;
+	&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="order.html"&gt;Order Page&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;&lt;a href="page-sidebar.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="category.html"&gt;Product&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="col-md-2 machart"&gt;
+	&lt;button id="popcart" class="btn btn-default btn-chart btn-sm "&gt;&lt;span class="mychart"&gt;Cart&lt;/span&gt;|&lt;span class="allprice"&gt;$0.00&lt;/span&gt;&lt;/button&gt;
+	&lt;div class="popcart"&gt;
+	&lt;table class="table table-condensed popcart-inner"&gt;
+	&lt;tbody&gt;
+	&lt;tr&gt;
+	&lt;td&gt;
+	&lt;img src="images/dummy-1.png" alt="" class="img-responsive"/&gt;
+	&lt;/td&gt;
+	&lt;td&gt;&lt;a href="product.html"&gt;Casio Exilim Zoom&lt;/a&gt;&lt;br/&gt;&lt;span&gt;Color: green&lt;/span&gt;
+	&lt;/td&gt;
+	&lt;td&gt;1X&lt;/td&gt;
+	&lt;td&gt;$138.80&lt;/td&gt;
+	&lt;td&gt;&lt;a href=""&gt;&lt;i class="fa fa-times-circle fa-2x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;/table&gt;
+	&lt;span class="sub-tot"&gt;Sub-Total : &lt;span&gt;$277.60&lt;/span&gt; | &lt;span&gt;Vat (17.5%)&lt;/span&gt; : $36.00 &lt;/span&gt;
+	&lt;br/&gt;
+	&lt;div class="btn-popcart"&gt;
+	&lt;a href="checkout.html" class="btn btn-default btn-red btn-sm"&gt;Checkout&lt;/a&gt;
+	&lt;a href="cart.html" class="btn btn-default btn-red btn-sm"&gt;More&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="popcart-tot"&gt;
+	&lt;p&gt;
+	Total&lt;br/&gt;
+	&lt;span&gt;$313.60&lt;/span&gt;
+	&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;!--end main-nav --&gt;
+					</code>
+				</pre>
+			</div>
+			<h4>Mega menu</h4>
+			<p>To add a megamenu item create list item with class "dropdown menu-large". and inline the list item create list with class "dropdown-menu megamenu container row"
+			here is the example :</p>
+			<pre>
+				<code>
+	&lt;li class="dropdown menu-large"&gt;
+	&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Mega Menu&lt;/a&gt;
+	&lt;ul class="dropdown-menu megamenu container row"&gt;
+		&lt;li class="col-sm-4"&gt;
+		&lt;h4&gt;Page Template&lt;/h4&gt;
+		&lt;ul&gt;
+		&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class="col-sm-4"&gt;
+		&lt;h4&gt;Page Template&lt;/h4&gt;
+		&lt;ul&gt;
+		&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class="col-sm-4"&gt;
+		&lt;h4&gt;Page Template&lt;/h4&gt;
+		&lt;ul&gt;
+		&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;&lt;div class="dashed-nav"&gt;&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;/li&gt;
+				</code>
+			</pre>
+			<h4>Dropdown menu</h4>
+			<p>To add a Simple Dropdown mneu item, create list item with class "dropdown". and inline the list item create list with class "dropdown-menu"
+			here is the example :</p>
+			<pre>
+				<code>
+	&lt;li class="dropdown"&gt;
+	&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+		&lt;ul class="dropdown-menu"&gt;
+			&lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="category.html"&gt;Category Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="category-list.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="category-fullwidth.html"&gt;Category List Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="product.html"&gt;Detail Product Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="page-sidebar.html"&gt;Page with sidebar&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="register.html"&gt;Register Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="order.html"&gt;Order Page&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="checkout.html"&gt;Checkout Page&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+				</code>
+			</pre>
+			
+			<h4>Slider</h4>
+			<p>
+				In The silder section you can change the image and the description with your own.
+				<pre>
+					<code>
+&lt;div class="main-slide"&gt;
+&lt;div id="sync1" class="owl-carousel"&gt;
+	&lt;div class="item"&gt;
+	&lt;div class="slide-desc"&gt;
+	&lt;div class="inner"&gt;
+	&lt;h1&gt;Stylish Jacket, be your best deal&lt;/h1&gt;
+	&lt;p&gt;
+	Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+	&lt;/p&gt;
+	&lt;button class="btn btn-default btn-red btn-lg"&gt;Add to cart&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class="inner"&gt;
+	&lt;div class="pro-pricetag big-deal"&gt;
+	&lt;div class="inner"&gt;
+	&lt;span class="oldprice"&gt;$314&lt;/span&gt;
+	&lt;span&gt;$199&lt;/span&gt;
+	&lt;span class="ondeal"&gt;Best Deal&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="slide-type-1"&gt;
+	&lt;img src="images/slide-1.jpg" alt="" class="img-responsive"/&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="item"&gt;
+	&lt;div class="slide-desc"&gt;
+	&lt;div class="inner"&gt;
+	&lt;h1&gt;Stylish Jacket, be your best deal&lt;/h1&gt;
+	&lt;p&gt;
+	Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+	&lt;/p&gt;
+	&lt;button class="btn btn-default btn-red btn-lg"&gt;Add to cart&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class="inner"&gt;
+	&lt;div class="pro-pricetag big-deal"&gt;
+	&lt;div class="inner"&gt;
+	&lt;span class="oldprice"&gt;$314&lt;/span&gt;
+	&lt;span&gt;$199&lt;/span&gt;
+	&lt;span class="ondeal"&gt;Best Deal&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="slide-type-1"&gt;
+	&lt;img src="images/slide-2.jpg" alt="" class="img-responsive"/&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="item"&gt;
+	&lt;div class="slide-desc"&gt;
+	&lt;div class="inner"&gt;
+	&lt;h1&gt;Nike Airmax&lt;/h1&gt;
+	&lt;p&gt;
+	Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+	&lt;/p&gt;
+	&lt;button class="btn btn-default btn-red btn-lg"&gt;Add to cart&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class="inner"&gt;
+	&lt;div class="pro-pricetag big-deal"&gt;
+	&lt;div class="inner"&gt;
+	&lt;span class="oldprice"&gt;$314&lt;/span&gt;
+	&lt;span&gt;$199&lt;/span&gt;
+	&lt;span class="ondeal"&gt;Best Deal&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="slide-type-1"&gt;
+	&lt;img src="images/slide-3.jpg" alt="" class="img-responsive"/&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="item"&gt;
+	&lt;div class="slide-desc"&gt;
+	&lt;div class="inner"&gt;
+	&lt;h1&gt;Unique smaragd ring&lt;/h1&gt;
+	&lt;p&gt;
+	Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+	&lt;/p&gt;
+	&lt;button class="btn btn-default btn-red btn-lg"&gt;Add to cart&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class="inner"&gt;
+	&lt;div class="pro-pricetag big-deal"&gt;
+	&lt;div class="inner"&gt;
+	&lt;span class="oldprice"&gt;$314&lt;/span&gt;
+	&lt;span&gt;$199&lt;/span&gt;
+	&lt;span class="ondeal"&gt;Best Deal&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="slide-type-1"&gt;
+	&lt;img src="images/slide-4.jpg" alt="" class="img-responsive"/&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="bar"&gt;&lt;/div&gt;
+&lt;div id="sync2" class="owl-carousel"&gt;
+	&lt;div class="item"&gt;
+	&lt;div class="slide-type-1-sync"&gt;
+	&lt;h3&gt;Stylish Jacket&lt;/h3&gt;
+	&lt;p&gt;Description here here here&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="item"&gt;
+	&lt;div class="slide-type-1-sync"&gt;
+	&lt;h3&gt;Stylish Jacket&lt;/h3&gt;
+	&lt;p&gt;Description here here here&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="item"&gt;
+	&lt;div class="slide-type-1-sync"&gt;
+	&lt;h3&gt;Stylish Jacket&lt;/h3&gt;
+	&lt;p&gt;Description here here here&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</p>
+			<hr/>
+			<h3 id="css-structure">B. CSS Structure</h3>
+			<p>
+				The following css files are used in every template html files. They can be found in the HEAD section of the page. Style.css is the template css file, the others are twitter bootstrap and the styles require for each template feature. 
+			</p>
+			<pre>
+				<code>
+&lt;!-- Fonts --&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'&gt;
+&lt;link href='font-awesome/css/font-awesome.css' rel="stylesheet" type="text/css"&gt;
+<br/>
+&lt;!-- Bootstrap --&gt;
+&lt;link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+<br/>
+&lt;!-- Main Style --&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+<br/>
+&lt;!-- owl Style --&gt;
+&lt;link rel="stylesheet" href="css/owl.carousel.css" /&gt;
+&lt;link rel="stylesheet" href="css/owl.transitions.css" /&gt;
+&lt;!-- fancy Style --&gt;
+&lt;link rel="stylesheet" type="text/css" href="js/product/jquery.fancybox.css?v=2.1.5" media="screen" /&gt;
+				</code>
+			</pre>
+			<ul>
+				<li><b>style.css</b> - Main CSS for template, all main styles are here.</li>
+				<li><b>bootstrap.min.css</b> - Default styling for all basic HTML elements by Twitter Bootstrap and Default styling to control HTML elements in various screen width by Twitter Bootstrap</li>
+				<li>CSS
+					<ul>
+						<li><b>owl.carousel.css</b> - Default styling for Main Slider, and Page Slider</li>
+						<li><b>owl.theme.css</b> - Default styling for Theme of Slider</li>
+						<li><b>owl.transitions.css</b> - Default styling where Contains many transition efect for slider</li>
+					</ul>
+					<li><b>font-awesome.css</b> - Default styling for detail product image pop up</li>
+					<li><b>jquery.fancybox.css</b> - Default styling for detail product image pop up</li>
+				</li>
+			</ul>
+			<hr/>
+			<h3 id="java">C. Javascript</h3>
+				<p>
+					This template requires the following javascript files. You should place them in every template html files. at the bottom after tag "<code>&lt;!-- Footer --&gt;</code>" or at the top before "<code>&lt;!-- /head --&gt;</code>" tag.
+				</p>
+				<pre>
+					<code>
+&lt;!-- map --&gt;
+&lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt; 
+&lt;script type="text/javascript" src="js/jquery.ui.map.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/demo.js"&gt;&lt;/script&gt;
+	<br />
+&lt;!-- owl carousel --&gt;
+&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;
+	<br />
+&lt;!-- rating --&gt;
+&lt;script src="js/rate/jquery.raty.js"&gt;&lt;/script&gt;
+&lt;script src="js/labs.js" type="text/javascript"&gt;&lt;/script&gt;
+<br />
+&lt;!-- Add mousewheel plugin (this is optional) --&gt;
+&lt;script type="text/javascript" src="js/product/lib/jquery.mousewheel-3.0.6.pack.js"&gt;&lt;/script&gt;
+	<br />
+&lt;!-- fancybox --&gt;
+&lt;script type="text/javascript" src="js/product/jquery.fancybox.js?v=2.1.5"&gt;&lt;/script&gt;
+	<br />
+&lt;!-- custom js --&gt;
+&lt;script src="js/shop.js"&gt;&lt;/script&gt;
+					</code>
+				</pre>
+				
+				<hr/>
+				<h3 id="uploading">D. Uploading Templates</h3>
+				<p>
+					Best way to upload template is if you use FTP program. I strongly recomment you to use <a href="http://filezilla-project.org/">Filezilla</a>.
+					Filezilla is available for PC and Mac and it's easy to use. We assume that you already have hosting, so open filezilla, login and find "public_html" folder. On some servers it is called "www" folder...that's folder where you need to upload all files.
+				</p>
+				<h3 id="credit">E. Credits & Source</h3>
+				
+				<p>
+					During template development i used those javascript and graphic files:
+					<ul>
+						<li><a href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+						<li><a href="http://www.owlgraphic.com/owlcarousel/">jQuery OwlCarousel</a></li>
+						<li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+						<li><a href="http://fancybox.net/">Fancybox</a></li>
+					</ul>
+				</p>
+		</div>
+	</body>
+</html>
