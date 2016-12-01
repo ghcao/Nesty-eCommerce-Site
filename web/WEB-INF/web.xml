@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <description>Path to product images</description>
+        <param-name>productImagePath</param-name>
+        <param-value>image/products/</param-value>
+    </context-param>
+    <context-param>
+        <description>Path to category images</description>
+        <param-name>categoryImagePath</param-name>
+        <param-value>image/categories/</param-value>
+    </context-param>
     <session-config>
         <session-timeout>
             30
