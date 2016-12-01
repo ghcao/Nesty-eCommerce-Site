@@ -16,8 +16,8 @@
 	<body>
 		<h1>Hello World!</h1>
 	<sql:query var="result" dataSource="jdbc/nesty">
-		SELECT FROM category, product
-		WHERE category.id = product.category_id
+		SELECT * FROM CATEGORIES, PRODUCTS
+		WHERE CATEGORIES.ID = PRODUCTS.CAT_ID
 	</sql:query>
 	
 	<table border="1">
