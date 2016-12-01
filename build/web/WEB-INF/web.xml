@@ -12,4 +12,11 @@
             <url-pattern>/index.html</url-pattern>
         </jsp-property-group>
     </jsp-config>
+    <resource-ref>
+        <description>Connects to DB for Nesty</description>
+        <res-ref-name>jdbc/nesty</res-ref-name>
+        <res-type>javax.sql.ConnectionPoolDataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
 </web-app>
