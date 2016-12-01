@@ -25,7 +25,10 @@ import javax.servlet.http.HttpServletResponse;
 		"/viewCart",
 		"/updateCart",
 		"/checkout",
-		"/purchase"
+		"/purchase",
+		"/order",
+		"/register",
+		"/contact"
 	}
 )
 public class ControllerServlet extends HttpServlet {
