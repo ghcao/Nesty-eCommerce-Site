@@ -3,6 +3,8 @@
   <persistence-unit name="nestyFinalPU" transaction-type="JTA">
     <jta-data-source>jdbc/nesty</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
-    <properties/>
+    <properties>
+	    <property name="eclipselink.logging.level" value="FINEST"/>
+<properties/>
   </persistence-unit>
 </persistence>
